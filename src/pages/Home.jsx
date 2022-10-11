@@ -28,7 +28,7 @@ export const Home = () => {
     const featured = async () =>{
 
       try {
-        const res = await axios.get("http://localhost:5000/products?type=featured");
+        const res = await axios.get("https://reignmart.herokuapp.com/products?type=featured");
         setFeaturedPost(res.data);
       } catch (error) {
         console.log(error.message);
@@ -39,7 +39,7 @@ export const Home = () => {
     const latest = async () =>{
 
       try {
-        const res = await axios.get("http://localhost:5000/products?type=latest");
+        const res = await axios.get("https://reignmart.herokuapp.com/products?type=latest");
         setLatestPost(res.data);
       } catch (error) {
         console.log(error.message);
@@ -50,7 +50,7 @@ export const Home = () => {
     const upcoming = async () =>{
 
       try {
-        const res = await axios.get("http://localhost:5000/products?type=upcoming");
+        const res = await axios.get("https://reignmart.herokuapp.com/products?type=upcoming");
         setUpcomingPost(res.data);
       } catch (error) {
         console.log(error.message);
