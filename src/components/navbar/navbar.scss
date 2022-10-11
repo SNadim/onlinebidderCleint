@@ -1,0 +1,36 @@
+.navbar{
+    height: 5vh;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        ul{
+            text-align: left;
+            display: flex;
+            list-style-type: none;
+            color: #fff;
+            font-weight: 600;
+            gap: 30px;
+            margin-left: -41px;
+            
+            li{
+                // display: flex;
+                // align-items: center;
+                // cursor: pointer;
+                // font-size: 16px;
+                // height: 100%;
+                color: aliceblue;
+                padding: 14px;
+                &:hover{
+                    background-color: rgba(222, 37, 16, 0.954);
+                    transition: .2s;
+                }
+                
+            }
+        }
+    }
+}

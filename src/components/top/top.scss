@@ -1,0 +1,81 @@
+.top{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        width: 80%;
+        .wrapper{
+            display: flex;
+            justify-content: space-between;
+            .logo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: black;
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 0.6;
+                letter-spacing: 2px;
+                cursor: pointer;
+            }
+
+            .search{
+                .searchWrapper{
+                    display: flex;
+
+                    .dropDown{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        select{
+                            cursor: pointer;
+                            height: 100%;
+                            width: 150px;
+                            text-align: center;
+                            font-size: 16px;
+                        }
+                    }
+                    .input{
+                        .searchInput{
+                            height: 40px;
+                            width: 500px;
+                            padding: 5px;
+                            font-size: 16px;
+                            color: #222;
+                            &::placeholder{
+                                font-size:16px;
+                                color: #444;
+                            }
+                        }
+                    }
+                    .searchIcon{
+                        padding: 8px 18px;
+                        background-color: #222;
+                        color: white;
+                        border-radius: 0px 5px 5px 0px;
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                    }
+                }
+
+            }
+
+            .icon{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .iconItem{
+                    font-size: 14px;
+                    cursor: pointer;
+                    margin-left: 25px;
+                    color: rgb(58, 57, 57);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.announce{
+    height: 55vh;
+    background-color: rgb(176, 165, 165);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        .contentWrapper{
+            display: flex;
+            align-items: center;
+            .content{
+                gap: 100px;
+                text-align: right;
+                h1{
+                    font-size: 40px;
+                    font-weight: 800;
+                    color: rgb(194, 37, 37);
+                }
+    
+                span{
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #444;
+                }
+            }
+        }
+        
+        .image{
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            img{
+            object-fit: cover;
+            height: 500px;
+            width: 500px;
+            }
+        }
+    }
+}

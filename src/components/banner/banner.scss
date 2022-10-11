@@ -1,0 +1,35 @@
+
+.head{
+    border-right: 1px solid grey;
+}
+
+.banner{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    .container{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        .iconWrapper{
+            display: flex;
+
+            .item{
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                font-size: 14px;
+                padding: 5px 20px;
+                color: black;
+                cursor: pointer;
+                span{
+                    color: rgb(166, 12, 12);
+                }
+                
+            }
+            
+        }
+    }
+}
