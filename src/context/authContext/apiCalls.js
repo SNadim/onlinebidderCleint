@@ -39,7 +39,15 @@ export const logout = async (dispatch) => {
 export const sellerLogin = async (user, dispatch) => {
   dispatch(loginStart());
   try {
-    const res = await api.post("auth/seller/login", { ...user }, config);
+    const res = await api.post(
+      "auth/seller/login",
+      { ...user },
+      {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
     dispatch(loginSuccess(res.data));
 
     return res.data;
